@@ -1,0 +1,39 @@
+.body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px, 50px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: #2f6f50;
+    padding-left: 25px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 25px;
+    margin: 5px;
+}
+
+.nav-links li{
+    display: inline;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #2f6f50;
+    font-size: 15px;
+    font-weight: bolder;
+}
