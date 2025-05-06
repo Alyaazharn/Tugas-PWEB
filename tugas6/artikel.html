@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Artikel - Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        line-height: 1.8;
+      }
+
+      .post-header {
+        background-image: url("https://source.unsplash.com/1200x500/?technology,ai");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        position: relative;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .post-header::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .post-header h1 {
+        position: relative;
+        z-index: 2;
+        font-weight: bold;
+        font-size: 2.8rem;
+        text-align: center;
+      }
+
+      .meta-info {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.9rem;
+      }
+
+      .meta-info .badge {
+        background-color: #f1f1f1;
+        color: #333;
+      }
+
+      .post-content img {
+        max-width: 100%;
+        border-radius: 10px;
+        margin: 1rem 0;
+      }
+
+      .post-content blockquote {
+        border-left: 4px solid #ccc;
+        padding-left: 1rem;
+        font-style: italic;
+        color: #777;
+        margin: 1.5rem 0;
+      }
+
+      .author-box {
+        margin-top: 3rem;
+        padding: 1.5rem;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+      }
+
+      .post-header {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("https://picsum.photos/200");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Post Hero -->
+    <div class="post-header">
+      <h1>Inovasi Terbaru dalam Dunia Kecerdasan Buatan</h1>
+    </div>
+
+    <!-- Post Content -->
+    <div class="container my-5">
+      <div class="meta-info mb-3">
+        <span class="badge text-dark"
+          ><i class="bi bi-person-circle"></i> Admin</span
+        >
+        <span class="badge text-dark"
+          ><i class="bi bi-calendar-event"></i> 06 Mei 2025</span
+        >
+        <span class="badge text-dark"
+          ><i class="bi bi-folder"></i> Teknologi</span
+        >
+      </div>
+
+      <div class="post-content">
+        <p>
+          Kecerdasan buatan (AI) telah berkembang dengan pesat dan mulai
+          merambah ke berbagai bidang kehidupan manusia. Dari otomatisasi
+          industri hingga kecerdasan dalam aplikasi sehari-hari, teknologi ini
+          mengubah cara kita hidup dan bekerja.
+        </p>
+
+        <img src="https://picsum.photos/200" alt="Ilustrasi AI" />
+
+        <h3>Apa Itu Kecerdasan Buatan?</h3>
+        <p>
+          Kecerdasan buatan adalah simulasi proses kecerdasan manusia oleh
+          mesin, terutama sistem komputer. Ini termasuk pembelajaran, penalaran,
+          dan koreksi diri.
+        </p>
+
+        <blockquote>
+          “AI bukan hanya tentang teknologi — ini tentang masa depan umat
+          manusia.”
+        </blockquote>
+
+        <h4>Penerapan AI dalam Industri</h4>
+        <ul>
+          <li>Perawatan kesehatan</li>
+          <li>Transportasi cerdas</li>
+          <li>Perbankan dan keuangan</li>
+          <li>Pendidikan adaptif</li>
+        </ul>
+
+        <p>
+          Dengan meningkatnya data dan kekuatan komputasi, AI akan menjadi
+          semakin terintegrasi dalam kehidupan kita sehari-hari. Namun, penting
+          untuk mempertimbangkan aspek etis dan keamanan dari penggunaannya.
+        </p>
+      </div>
+
+      <div class="author-box mt-5">
+        <h6>Ditulis oleh Admin</h6>
+        <p>
+          Admin adalah penulis teknologi dengan minat pada AI, keamanan siber,
+          dan tren digital masa depan.
+        </p>
+      </div>
+    </div>
+
+    <div class="container my-5">
+        <!-- Daftar Komentar -->
+        <h4 class="mb-4">3 Komentar</h4>
+        
+        <div class="bg-white p-3 rounded shadow-sm mb-3">
+          <p><strong>Nick</strong> - 26 April 2025</p>
+          <p>Sangat informatif sekali. Saya Suka!</p>
+        </div>
+      
+        <div class="bg-white p-3 rounded shadow-sm mb-5">
+          <p><strong>Mr. Joe</strong> - 6 Mei 2025</p>
+          <p>Ariktel ini jelas. Saya menyukainya</p>
+        </div>
+
+        <div class="bg-white p-3 rounded shadow-sm mb-5">
+            <p><strong>Belinda</strong> - 15 Mei 2025</p>
+            <p>Such a good article!</p>
+          </div>
+        
+        <!-- Formulir Komentar -->
+        <h5 class="mb-4">Tinggalkan Komentar</h5>
+        
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nama Anda" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email Anda" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Tulis komentar Anda..." required></textarea>
+          </div>
+          <button class="btn" style="background-color: #4c7df8; color: white;">Kirim Komentar</button>
+        </form>
+      </div>
+    </div> 
+         
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </body>
+</html>
